@@ -1,0 +1,214 @@
+@import url(singup.css);
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root {
+    --default-color: lightgray;
+}
+
+::selection {
+    background-color: var(--default-color);
+    color: white;
+}
+
+body {
+    background-color: var(--default-color);
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    padding: 40px;
+}
+
+.container {
+    width: 900px;
+    background: #fff;
+    box-shadow: 0 5px 10px rgb(0, 0, 0, 0.2);
+    /* display: flex; */
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 5px 5px 8px rgb(0, 0, 0, 0.336);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 40px;
+    gap: 30px;
+}
+
+.inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    border: 1px solid var(--default-color);
+    border-radius: 8px;
+}
+
+
+.input-box label {
+    font-size: 14px;
+}
+
+.input-field {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    cursor: text;
+    border-bottom: 1px solid var(--default-color);
+}
+
+.input-field:focus-within {
+    border-color: orange;
+}
+
+.input-field i {
+    font-size: 17px;
+}
+
+.input-field input {
+    border: none;
+    background-color: transparent;
+    width: 250px;
+    font-size: 12px;
+    left: -5px;
+}
+
+.input-field input:focus {
+    outline: none;
+}
+
+.login-form h1{
+    font-size: 32px;
+    font-weight: 500px;
+    color: #333;
+}
+
+.login-form p{
+    font-size: 14px;
+    font-weight: 500px;
+    color: var(--default-color);
+}
+
+.social-media {
+    margin-top: 2rem;
+}
+
+.social-media a{
+    text-decoration: none;
+}
+
+.social-media img{
+    width: 36px;
+    margin-left: 3rem;
+}
+
+.social-media img:hover{
+    transform: scale(1.2);
+}
+
+.input-box button[type="submit"] {
+    cursor: pointer;
+    width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 6px;
+    border: none;
+    padding: 10px;
+    color: white;
+    background: orange;
+}
+
+.input-box input[type="submit"]:hover {
+    transform: scale(1.05);
+}
+
+.forgot a {
+    color: orange;
+    text-decoration: underline;
+}
+
+.forgot p {
+    text-align: end;
+}
+
+.divider {
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.divider p{
+    font-size: 16px;
+    position: relative;
+    font-weight: 400;
+    color: var(--default-color);
+    z-index: 1;
+    background-color: white;
+    padding: 0 8px;
+}
+
+.divider::before {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 100%;
+    bottom: 50%;
+    background: #333;
+    z-index: 0;
+}
+
+.signup-text {
+    margin-top: 2rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+.signup-text a {
+    color: var(--default-color);
+    text-decoration: none;
+}
+
+.login-imagem{
+    width: 100%;
+    border-radius: 20px;
+    background-image: url(./images/cover-cs16.webp);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    position: relative;
+}
+
+.texto-imagem {
+    position: absolute;
+    display: inline-block;
+    text-align: left;
+    left: 8px;
+    bottom: 40px;
+    color: white;
+}
+
+.texto-imagem p {
+    position: absolute;
+    display: inline-block;
+    text-align: left;
+    bottom: 120px;
+    padding: 12px 12px;
+    border-radius: 12px;
+    color: white;
+    background: blue;
+}

@@ -1,0 +1,20 @@
+.email-password {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border: 1px solid lightgray;
+    border-radius: 8px;
+}
+
+.email-password button{
+    background: white;
+    padding: 20px 60px;
+    border-radius: 8px;
+    border-color: transparent;
+    cursor: pointer;
+}
+
+.email-password button:focus {
+    background: lightgray;
+}
